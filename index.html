@@ -57,6 +57,15 @@
       background-color: #4752c4;
       box-shadow: 0 0 40px #5865F2;
     }
+
+    .discord-text {
+      font-size: 28px;
+      color: #aaa;
+      margin-top: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
@@ -72,11 +81,16 @@
     <button class="btn discord-btn">💬 Rejoindre le Discord</button>
   </a>
 
+  <div class="discord-text">
+    Pour être informé de toutes les mises à jour du script,<br>
+    rejoins notre Discord !
+  </div>
+
   <script>
     function copyScript() {
       const script = `loadstring(game:HttpGet("https://raw.githubusercontent.com/waelosw/Ray-wael/main/Wael-Ray.lua"))()`;
       navigator.clipboard.writeText(script).then(() => {
-        alert("✅ Le script a été copié avec succes, maintenant colle le dans ton executeur !");
+        alert("✅ Script copié dans le presse-papiers !");
       }).catch(err => {
         alert("❌ Erreur lors de la copie : " + err);
       });
@@ -85,4 +99,3 @@
 
 </body>
 </html>
-
