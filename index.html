@@ -28,7 +28,7 @@
       color: #ccc;
     }
 
-    button {
+    .btn {
       background-color: #a020f0;
       color: white;
       border: none;
@@ -39,12 +39,23 @@
       border-radius: 16px;
       box-shadow: 0 0 30px #a020f0;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-bottom: 30px;
     }
 
-    button:hover {
+    .btn:hover {
       background-color: #7a1cc0;
       transform: scale(1.08);
       box-shadow: 0 0 40px #a020f0;
+    }
+
+    .discord-btn {
+      background-color: #5865F2;
+      box-shadow: 0 0 30px #5865F2;
+    }
+
+    .discord-btn:hover {
+      background-color: #4752c4;
+      box-shadow: 0 0 40px #5865F2;
     }
   </style>
 </head>
@@ -53,7 +64,13 @@
   <h1>WAEL HUB</h1>
   <p>Appuie pour copier ton script Roblox légendaire :</p>
 
-  <button onclick="copyScript()">📋 Copier le Script</button>
+  <button class="btn" onclick="copyScript()">📋 Copier le Script</button>
+
+  <br>
+
+  <a href="https://discord.gg/CHpaNDw83f" target="_blank">
+    <button class="btn discord-btn">💬 Rejoindre le Discord</button>
+  </a>
 
   <script>
     function copyScript() {
