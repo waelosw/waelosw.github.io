@@ -1,3 +1,53 @@
 script:
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/waelosw/Ray-wael/main/Wael-Ray.lua"))()
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Wael Hub — Copier le Script</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #ccc;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    button {
+      background-color: #a020f0;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #a020f0;
+    }
+    button:hover {
+      background-color: #7a1cc0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Wael Hub</h1>
+  <p>Clique sur le bouton pour copier ton script Roblox :</p>
+
+  <button onclick="copyScript()">📋 Copier le Script</button>
+
+  <script>
+    function copyScript() {
+      const script = `loadstring(game:HttpGet("https://raw.githubusercontent.com/waelosw/Ray-wael/main/Wael-Ray.lua"))()`;
+      navigator.clipboard.writeText(script).then(() => {
+        alert("✅ Script copié dans le presse-papiers !");
+      }).catch(err => {
+        alert("❌ Erreur lors de la copie : " + err);
+      });
+    }
+  </script>
+
+</body>
+</html>
