@@ -9,11 +9,10 @@
       color: #e0e0e0;
       font-family: 'Orbitron', sans-serif;
       margin: 0;
-      padding: 0;
       text-align: center;
+      padding-top: 120px;
     }
 
-    /* Menu hamburger */
     .navbar {
       position: fixed;
       top: 0;
@@ -50,11 +49,6 @@
 
     .menu a:hover {
       color: #a020f0;
-    }
-
-    /* Page content */
-    .content {
-      padding-top: 120px;
     }
 
     h1 {
@@ -112,33 +106,29 @@
 </head>
 <body>
 
-  <!-- Menu hamburger -->
   <div class="navbar">
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
-      <a href="#accueil">Accueil</a>
-      <a href="#script">Script</a>
-      <a href="#discord">Discord</a>
+      <a href="index.html">Accueil</a>
+      <a href="script.html">Script</a>
+      <a href="discord.html">Discord</a>
     </div>
   </div>
 
-  <!-- Contenu principal -->
-  <div class="content" id="accueil">
-    <h1>WAEL HUB</h1>
-    <p id="script">Appuie pour copier ton script Roblox légendaire :</p>
+  <h1>WAEL HUB</h1>
+  <p>Appuie pour copier ton script Roblox légendaire :</p>
 
-    <button class="btn" onclick="copyScript()">📋 Copier le Script</button>
+  <button class="btn" onclick="copyScript()">📋 Copier le Script</button>
 
-    <br>
+  <br>
 
-    <a href="https://discord.gg/CHpaNDw83f" target="_blank" id="discord">
-      <button class="btn discord-btn">💬 Rejoindre le Discord</button>
-    </a>
+  <a href="https://discord.gg/CHpaNDw83f" target="_blank">
+    <button class="btn discord-btn">💬 Rejoindre le Discord</button>
+  </a>
 
-    <div class="discord-text">
-      Pour être informé de toutes les mises à jour du script,<br>
-      rejoins notre Discord !
-    </div>
+  <div class="discord-text">
+    Pour être informé de toutes les mises à jour du script,<br>
+    rejoins notre Discord !
   </div>
 
   <script>
