@@ -10,6 +10,7 @@
       font-family: 'Orbitron', sans-serif;
       text-align: center;
       padding-top: 120px;
+      margin: 0;
     }
 
     .navbar {
@@ -37,6 +38,10 @@
       position: absolute;
       top: 80px;
       right: 20px;
+    }
+
+    .menu.show {
+      display: flex;
     }
 
     .menu a {
@@ -72,4 +77,9 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "flex"
+      menu.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
