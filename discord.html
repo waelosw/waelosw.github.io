@@ -11,6 +11,45 @@
       text-align: center;
       padding-top: 120px;
     }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #1a1a1a;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .menu-toggle {
+      font-size: 40px;
+      color: #5865F2;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #1a1a1a;
+      border: 2px solid #5865F2;
+      border-radius: 12px;
+      padding: 20px;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+    }
+
+    .menu a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .menu a:hover {
+      color: #5865F2;
+    }
+
     h1 {
       font-size: 80px;
       text-shadow: 0 0 20px #5865F2;
@@ -19,7 +58,6 @@
 </head>
 <body>
 
-  <!-- Menu hamburger ici -->
   <div class="navbar">
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
@@ -34,10 +72,4 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
-  </script>
-
-</body>
-</html>
-
+      menu.style.display = menu.style.display === "flex"
