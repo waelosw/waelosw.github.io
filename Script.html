@@ -10,6 +10,7 @@
       font-family: 'Orbitron', sans-serif;
       text-align: center;
       padding-top: 120px;
+      margin: 0;
     }
 
     .navbar {
@@ -39,6 +40,10 @@
       right: 20px;
     }
 
+    .menu.show {
+      display: flex;
+    }
+
     .menu a {
       color: #ccc;
       text-decoration: none;
@@ -58,6 +63,7 @@
 </head>
 <body>
 
+  <!-- Menu hamburger -->
   <div class="navbar">
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <div class="menu" id="menu">
@@ -72,7 +78,7 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      menu.classList.toggle("show");
     }
   </script>
 
